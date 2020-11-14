@@ -1,0 +1,9 @@
+1.ng generate component {{ name-project }}
+
+2.déplacer ce component dans le dossier réalisation-( objet || espace )
+
+3.ajouter la route dans app-routes.ts
+
+4.ajouter la route vers le nouveau projet dans realisation-(objet || espace)/(objet || espace)-menu
+
+5.se servir du dossier template-component pour créer le nouveau projet

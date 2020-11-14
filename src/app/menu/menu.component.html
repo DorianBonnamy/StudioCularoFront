@@ -1,0 +1,27 @@
+<div class="container">
+  <nav class="navbar-nav navbar-expand-md navbar-light bg-light">
+    <!-- <a class="navbar-brand ml-auto" routerLink="home">STUDI<b>O</b> CULAR<b>O</b></a> -->
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbar" class="color collapse navbar-collapse" [class.collapse]="navbarCollapsed">
+      <ul class="navbar-nav nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" routerLinkActive="active">ACCUEIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="studio" routerLinkActive="active">STUDI<b>O</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="prestations" routerLinkActive="active">PRESTATI<b>O</b>NS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="realisation" routerLinkActive="active">RÉALISATI<b>O</b>NS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLinkActive="active">C<b>O</b>NTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

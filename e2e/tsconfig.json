@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/e2e",
+    "module": "commonjs",
+    "target": "es5",
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "node",
+      "jquery", // Add
+      "materialize-css" // Add
+    ]
+  },
+  "exclude": ["src/test.ts", "**/*.spec.ts"]
+}

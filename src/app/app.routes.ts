@@ -1,0 +1,37 @@
+import { Routes } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
+import { DeliveryListComponent } from './delivery-list/delivery-list.component';
+import { StudioComponent } from './studio/studio.component';
+import { ProductionComponent } from './production/production.component';
+import { ContactComponent } from './contact/contact.component';
+import { RealisationObjectComponent } from './realisation-object/realisation-object.component';
+import { RealisationEspaceComponent } from './realisation-espace/realisation-espace.component';
+import { EspaceAppartementAtypiqueGrenobloisComponent } from './realisation-espace/espace-appartement-atypique-grenoblois/espace-appartement-atypique-grenoblois.component';
+import { EspaceAppartementsDesCanutsComponent } from './realisation-espace/espace-appartements-des-canuts/espace-appartements-des-canuts.component';
+import { TableSamComponent } from './realisation-object/table-sam/table-sam.component';
+import { StrollMeComponent } from './realisation-object/stroll-me/stroll-me.component';
+import { TablAChatComponent } from './realisation-object/tabl-a-chat/tabl-a-chat.component';
+import { CraneLampComponent } from './realisation-object/crane-lamp/crane-lamp.component';
+import { RollOnComponent } from './realisation-object/roll-on/roll-on.component';
+import { MikadoComponent } from './realisation-object/mikado/mikado.component';
+import { HybridaSonComponent } from './realisation-object/hybrida-son/hybrida-son.component';
+
+export const ROUTES: Routes = [
+  { path: 'contact', component: ContactComponent },
+  { path: 'prestations', component: DeliveryListComponent },
+  { path: '', component: HomeComponent },
+  { path: 'realisation', component: ProductionComponent },
+  { path: 'realisation_espace', component: RealisationEspaceComponent },
+  { path: 'realisation-espace/appartement-atypique-grenoblois', component: EspaceAppartementAtypiqueGrenobloisComponent },
+  { path: 'realisation-espace/appartement-des-canuts', component: EspaceAppartementsDesCanutsComponent },
+  { path: 'realisation_objet', component: RealisationObjectComponent },
+  { path: 'realisation-objet/table-sam', component: TableSamComponent },
+  { path: 'realisation-objet/stroll-me', component: StrollMeComponent },
+  { path: 'realisation-objet/tabl-a-chat', component: TablAChatComponent },
+  { path: 'realisation-objet/crane-lamp', component: CraneLampComponent },
+  { path: 'realisation-objet/roll-on', component: RollOnComponent },
+  { path: 'realisation-objet/mikado', component: MikadoComponent },
+  { path: 'realisation-objet/hybrida-son', component: HybridaSonComponent },
+  { path: 'studio', component: StudioComponent }
+];

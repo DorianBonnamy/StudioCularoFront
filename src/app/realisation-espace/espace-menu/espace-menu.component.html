@@ -1,0 +1,49 @@
+<nav class="navbar-nav navbar-light">
+  <div id="navbar" class="color">
+    <ul class="navbar-nav nav-fill">
+      <!-- Appartement atypique grenoblois-->
+      <li class="nav-item">
+        <!-- if selected -->
+        <a
+          class="nav-link isSelected"
+          routerLink="/realisation-espace/appartement-atypique-grenoblois"
+          routerLinkActive="active"
+          *ngIf="isSelected('/realisation-espace/appartement-atypique-grenoblois')"
+        >
+          Appartement atypique grenoblois
+        </a>
+        <!-- if not selected -->
+        <a
+          class="nav-link"
+          routerLink="/realisation-espace/appartement-atypique-grenoblois"
+          routerLinkActive="active"
+          *ngIf="!isSelected('/realisation-espace/appartement-atypique-grenoblois')"
+        >
+          Appartement atypique grenoblois
+        </a>
+      </li>
+
+      <!-- Appartement des canuts -->
+      <li class="nav-item">
+        <!-- if selected -->
+        <a
+          class="nav-link isSelected"
+          routerLink="/realisation-espace/appartement-des-canuts"
+          routerLinkActive="active"
+          *ngIf="isSelected('/realisation-espace/appartement-des-canuts')"
+        >
+          Appartement des canuts
+        </a>
+        <!-- if not selected -->
+        <a
+          class="nav-link"
+          routerLink="/realisation-espace/appartement-des-canuts"
+          routerLinkActive="active"
+          *ngIf="!isSelected('/realisation-espace/appartement-des-canuts')"
+        >
+          Appartement des canuts</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

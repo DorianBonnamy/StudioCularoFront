@@ -1,0 +1,49 @@
+<nav class="navbar-nav navbar-expand-md navbar-light bg-light">
+  <div id="navbar" class="color">
+    <ul class="navbar-nav nav-fill">
+      <!-- Bouton Espace -->
+      <li class="nav-item">
+        <!-- if selected -->
+        <a
+          class="nav-link isSelected"
+          routerLink="/realisation-espace/appartement-atypique-grenoblois"
+          routerLinkActive="active"
+          *ngIf="isSelected('/realisation-espace')"
+        >
+          <b>ESPACE</b>
+        </a>
+        <!-- if not selected -->
+        <a
+          class="nav-link isNotSelected"
+          routerLink="/realisation-espace/appartement-atypique-grenoblois"
+          routerLinkActive="active"
+          *ngIf="!isSelected('/realisation-espace')"
+        >
+          <b>ESPACE</b></a
+        >
+      </li>
+
+      <!-- Bouton Objet -->
+      <li class="nav-item">
+        <!-- if selected -->
+        <a
+          class="nav-link isSelected"
+          routerLink="/realisation-objet/table-sam"
+          routerLinkActive="active"
+          *ngIf="isSelected('/realisation-objet')"
+        >
+          <b>OBJET</b>
+        </a>
+        <!-- if not selected -->
+        <a
+          class="nav-link isNotSelected"
+          routerLink="/realisation-objet/table-sam"
+          routerLinkActive="active"
+          *ngIf="!isSelected('/realisation-objet')"
+        >
+          <b>OBJET</b></a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
