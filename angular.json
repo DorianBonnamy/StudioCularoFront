@@ -128,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "siteStudioCularo"
+    }
+  },
+  "defaultProject": "siteStudioCularo",
+  "cli": {
+    "analytics": "d9d7065b-bace-4e50-8573-00cbee377ffd"
+  }
 }
