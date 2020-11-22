@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ModalCarouselComponent } from "../../modal-carousel/modal-carousel.component";
 @Component({
   selector: 'app-espace-appartement-atypique-grenoblois',
   templateUrl: './espace-appartement-atypique-grenoblois.component.html',
   styleUrls: ['./espace-appartement-atypique-grenoblois.component.less']
 })
-export class EspaceAppartementAtypiqueGrenobloisComponent implements OnInit {
+export class EspaceAppartementAtypiqueGrenobloisComponent implements OnInit, AfterViewInit {
+  @ViewChild(ModalCarouselComponent, null) child: ModalCarouselComponent;
+
   directory: string = 'assets/realisation/espace/appartement_atypique_grenoblois/';
 
   images: string[] = [
@@ -20,5 +22,13 @@ export class EspaceAppartementAtypiqueGrenobloisComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngAfterViewInit(): void {
+  }
+
+  ngOnInit() {
+  }
+
+  
+
+  
 }

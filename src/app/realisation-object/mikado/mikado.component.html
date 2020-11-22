@@ -11,14 +11,14 @@
     </div>
     <div class="col col-lg-7">
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[0] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[0] }}"  (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="row">
         <div class="picture col-sm-6">
-          <img class="studio_profil" src="{{ this.images[1] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[1] }}"  (click)="this.child.open(this.child.content)"  alt="logo studio cularo" />
         </div>
         <div class="picture col-sm-6">
-          <img class="studio_profil" src="{{ this.images[2] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[2] }}"  (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
         </div>
       </div>
     </div>
@@ -35,3 +35,4 @@
     </div>
   </div>
 </div>
+<app-modal-carousel [images]="images"></app-modal-carousel>

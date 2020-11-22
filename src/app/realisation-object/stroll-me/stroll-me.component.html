@@ -4,29 +4,29 @@
     <div class="col col-lg-2">
       <app-object-menu></app-object-menu>
       <div class="logo">
-        <img class="studio_logo_droit" src="assets/logo.png" alt="logo studio cularo" />
+        <img class="studio_logo_droit" src="assets/logo.png"  alt="logo studio cularo" />
       </div>
     </div>
     <!-- set image -->
     <div class="col col-lg-2">
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[0] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[0] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[1] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[1] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
     <div class="col col-lg-2">
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[2] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[2] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[3] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[3] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
     <div class="col col-lg-3">
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[4] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[4] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
     <div class="texte col-sm-3">
@@ -44,7 +44,7 @@
         Le fil tissé de la lampe Stroll Me peut tout à la fois s’enrouler et se dérouler à même sa structure. Le but est de permet
         l’amplitude de mouvements dans l’espace domestique ainsi qu’une diffusion de la lumière, rôle traditionnellement attribué à
         l’abat-jour.
-      </p>      
+      </p>
       <p>
         Lampe
         <br />
@@ -53,3 +53,4 @@
     </div>
   </div>
 </div>
+<app-modal-carousel [images]="images"></app-modal-carousel>

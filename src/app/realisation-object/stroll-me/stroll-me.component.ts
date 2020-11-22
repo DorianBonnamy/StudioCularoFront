@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ModalCarouselComponent } from "../../modal-carousel/modal-carousel.component";
 
 @Component({
   selector: 'app-stroll-me',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stroll-me.component.less']
 })
 export class StrollMeComponent implements OnInit {
+  @ViewChild(ModalCarouselComponent, null) child: ModalCarouselComponent;
   directory: string = 'assets/realisation/object/stroll-me/';
 
   images: string[] = [

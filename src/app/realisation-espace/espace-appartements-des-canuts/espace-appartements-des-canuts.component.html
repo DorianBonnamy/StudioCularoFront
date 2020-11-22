@@ -12,25 +12,25 @@
     <div class="col col-lg-5">
       <div class="row">
         <div class="picture inside_column col-sm-6">
-          <img class="studio_profil" src="{{ this.images[0] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[0] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
         </div>
         <div class="picture inside_column col-sm-6">
-          <img class="studio_profil" src="{{ this.images[1] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[1] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
         </div>
       </div>
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[2] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[2] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
     <div class="col color_out center_part col-lg-2">
       <div class="space_around_column_picture">
-        <img class="studio_profil" src="{{ this.images[3] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[3] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="space_around_column_picture">
-        <img class="studio_profil" src="{{ this.images[4] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[4] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div>
-        <img class="studio_profil" src="{{ this.images[5] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[5] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
     <div class="texte col-sm-3">
@@ -56,3 +56,6 @@
     </div>
   </div>
 </div>
+
+<app-modal-carousel [images]="images"></app-modal-carousel>
+

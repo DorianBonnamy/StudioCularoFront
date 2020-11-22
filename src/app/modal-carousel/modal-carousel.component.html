@@ -1,0 +1,9 @@
+<ng-template class="modal" #content let-modal >
+  <div class="test">HELLO</div>
+    <div class="modal-header">
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <app-image-carousel [images]="images"></app-image-carousel>
+</ng-template>

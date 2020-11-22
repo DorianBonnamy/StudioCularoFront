@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-realisation-espace',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./realisation-espace.component.less']
 })
 export class RealisationEspaceComponent implements OnInit {
+
+
   constructor() {}
 
   ngOnInit() {}

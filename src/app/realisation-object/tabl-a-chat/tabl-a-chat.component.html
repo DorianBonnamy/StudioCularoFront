@@ -10,22 +10,22 @@
     <!-- set image -->
     <div class="col col-lg-3">
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[0] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[0] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[1] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[1] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[2] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[2] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
 
     <div class="col col-lg-4">
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[3] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[3] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="row">
-        <img class="studio_profil" src="{{ this.images[4] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[4] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
 
@@ -33,9 +33,9 @@
       <!-- text descriptif-->
       <p>
         Griffoir
-        <br>
-        Assemblage à la colle et cheville en bois de tasseaux et liteaux en sapin rabotés (section 25x25 mm et 15x15mm), tapis en
-        coco et élastique SANDOW L. 940 x l. 455 x h.1000 mm
+        <br />
+        Assemblage à la colle et cheville en bois de tasseaux et liteaux en sapin rabotés (section 25x25 mm et 15x15mm), tapis en coco et
+        élastique SANDOW L. 940 x l. 455 x h.1000 mm
       </p>
       <p>
         Dessiné et réalisé en étroite collaboration avec une vétérinaire, ce griffoir bouscule les traditionnels arbres à chat inesthétiques
@@ -49,3 +49,5 @@
     </div>
   </div>
 </div>
+
+<app-modal-carousel [images]="images"></app-modal-carousel>

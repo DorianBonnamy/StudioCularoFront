@@ -10,29 +10,29 @@
     <div class="col col-lg-7">
       <div class="row">
         <div class="picture col-sm-3">
-          <img class="studio_profil" src="{{ this.images[0] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[0] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
         </div>
         <div class="picture col-sm-5">
-          <img class="studio_profil" src="{{ this.images[1] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[1] }}" alt="logo studio cularo" (click)="this.child.open(this.child.content)" />
         </div>
         <div class="picture col-sm-3">
-          <img class="studio_profil" src="{{ this.images[2] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[2] }}" alt="logo studio cularo" (click)="this.child.open(this.child.content)" />
         </div>
       </div>
       <div class="row">
         <div class="picture col-sm-7">
-          <img class="studio_profil" src="{{ this.images[3] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[3] }}" alt="logo studio cularo" (click)="this.child.open(this.child.content)" />
         </div>
         <div class="picture col-sm-4">
-          <img class="studio_profil" src="{{ this.images[4] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[4] }}" alt="logo studio cularo" (click)="this.child.open(this.child.content)" />
         </div>
       </div>
       <div class="row">
         <div class="picture col-sm-6">
-          <img class="studio_profil" src="{{ this.images[5] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[5] }}" alt="logo studio cularo" (click)="this.child.open(this.child.content)" />
         </div>
         <div class="picture col-sm-4">
-          <img class="studio_profil" src="{{ this.images[6] }}" alt="logo studio cularo" />
+          <img class="studio_profil" src="{{ this.images[6] }}" alt="logo studio cularo" (click)="this.child.open(this.child.content)" />
         </div>
       </div>
     </div>
@@ -56,3 +56,5 @@
     </div>
   </div>
 </div>
+
+<app-modal-carousel [images]="images"></app-modal-carousel>

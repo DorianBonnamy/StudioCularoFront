@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ModalCarouselComponent } from "../../modal-carousel/modal-carousel.component";
 
 @Component({
   selector: 'app-espace-appartements-des-canuts',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./espace-appartements-des-canuts.component.less']
 })
 export class EspaceAppartementsDesCanutsComponent implements OnInit {
+  @ViewChild(ModalCarouselComponent, null) child: ModalCarouselComponent;
   directory: string = 'assets/realisation/espace/appartement_des_canuts/';
 
   images: string[] = [

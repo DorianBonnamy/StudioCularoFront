@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ModalCarouselComponent } from "../../modal-carousel/modal-carousel.component";
 
 @Component({
   selector: 'app-roll-on',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./roll-on.component.less']
 })
 export class RollOnComponent implements OnInit {
+  @ViewChild(ModalCarouselComponent, null) child: ModalCarouselComponent;
   directory: string = 'assets/realisation/object/roll-on/';
 
   images: string[] = [

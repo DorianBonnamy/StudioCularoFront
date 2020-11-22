@@ -11,7 +11,7 @@
     </div>
     <div class="col col-lg-7">
       <div class="col-lg-7">
-        <img class="studio_proil" src="{{ this.images[0] }}" alt="logo studio cularo" />
+        <img class="studio_proil" src="{{ this.images[0] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
     <div class="texte col-sm-3">
@@ -25,3 +25,4 @@
     </div>
   </div>
 </div>
+<app-modal-carousel [images]="images"></app-modal-carousel>

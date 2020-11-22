@@ -4,38 +4,38 @@
     <div class="col col-lg-2">
       <app-object-menu></app-object-menu>
       <div class="logo">
-        <img class="studio_logo_droit" src="assets/logo.png" alt="logo studio cularo" />
+        <img class="studio_logo_droit" src="assets/logo.png"  alt="logo studio cularo" />
       </div>
     </div>
     <div class="col col-lg-2">
       <div class="picture_profil">
-        <img class="studio_profil" src="{{ this.images[0] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[0] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="picture_profil">
-        <img class="studio_profil" src="{{ this.images[1] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[1] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="picture_profil">
-        <img class="studio_profil" src="{{ this.images[2] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[2] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
 
     <div class="col col-lg-3">
       <div class="picture">
-        <img class="studio_profil" src="{{ this.images[3] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[3] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="picture">
-        <img class="studio_profil" src="{{ this.images[4] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[4] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
     <div class="col col-lg-2">
       <div class="picture">
-        <img class="studio_profil" src="{{ this.images[5] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[5] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="picture">
-        <img class="studio_profil" src="{{ this.images[6] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[6] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
       <div class="picture_profil">
-        <img class="studio_profil" src="{{ this.images[7] }}" alt="logo studio cularo" />
+        <img class="studio_profil" src="{{ this.images[7] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>
 
@@ -51,7 +51,9 @@
         style graphique affirmé. Le piètement, lui, se veut sobre et élégant par sa teinte et son dessin.
         <br />
         Cette table saura s’intégrer et mettre en valeur son environnement
-      </p>     
+      </p>
     </div>
   </div>
 </div>
+
+<app-modal-carousel [images]="images"></app-modal-carousel>
