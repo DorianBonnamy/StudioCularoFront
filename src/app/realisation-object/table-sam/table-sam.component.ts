@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { ModalCarouselComponent } from "../../modal-carousel/modal-carousel.component";
+import { ModalCarouselComponent } from '../../modal-carousel/modal-carousel.component';
 
 @Component({
   selector: 'app-table-sam',

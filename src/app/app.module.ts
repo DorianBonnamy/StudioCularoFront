@@ -24,7 +24,7 @@ import { RollOnComponent } from './realisation-object/roll-on/roll-on.component'
 import { MikadoComponent } from './realisation-object/mikado/mikado.component';
 import { HybridaSonComponent } from './realisation-object/hybrida-son/hybrida-son.component';
 import { AppRoutingModule } from './app-routing.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { ModalCarouselComponent } from './modal-carousel/modal-carousel.component';
 
@@ -56,7 +56,7 @@ import { ModalCarouselComponent } from './modal-carousel/modal-carousel.componen
     ImageCarouselComponent,
     ModalCarouselComponent
   ],
-  imports: [BrowserModule, AppRoutingModule,NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent]
 })

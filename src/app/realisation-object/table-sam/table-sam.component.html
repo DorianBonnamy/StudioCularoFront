@@ -1,20 +1,20 @@
-<div class="container">
+  <div class="container">
   <app-realisation-menu></app-realisation-menu>
   <div class="row back-color">
     <div class="col col-lg-2">
       <app-object-menu></app-object-menu>
       <div class="logo">
-        <img class="studio_logo_droit" src="assets/logo.png"  alt="logo studio cularo" />
+        <img class="studio_logo_droit" src="assets/logo.png" alt="logo studio cularo" />
       </div>
     </div>
     <div class="col col-lg-2">
-      <div class="picture_profil">
+      <div class="picture">
         <img class="studio_profil" src="{{ this.images[0] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
-      <div class="picture_profil">
+      <div class="picture">
         <img class="studio_profil" src="{{ this.images[1] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
-      <div class="picture_profil">
+      <div class="picture">
         <img class="studio_profil" src="{{ this.images[2] }}" (click)="this.child.open(this.child.content)" alt="logo studio cularo" />
       </div>
     </div>

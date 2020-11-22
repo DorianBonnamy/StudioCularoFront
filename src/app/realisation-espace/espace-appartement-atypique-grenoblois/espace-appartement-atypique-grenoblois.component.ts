@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { ModalCarouselComponent } from "../../modal-carousel/modal-carousel.component";
+import { ModalCarouselComponent } from '../../modal-carousel/modal-carousel.component';
 @Component({
   selector: 'app-espace-appartement-atypique-grenoblois',
   templateUrl: './espace-appartement-atypique-grenoblois.component.html',
@@ -22,13 +22,7 @@ export class EspaceAppartementAtypiqueGrenobloisComponent implements OnInit, Aft
 
   constructor() {}
 
-  ngAfterViewInit(): void {
-  }
+  ngAfterViewInit(): void {}
 
-  ngOnInit() {
-  }
-
-  
-
-  
+  ngOnInit() {}
 }

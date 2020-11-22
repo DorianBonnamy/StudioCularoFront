@@ -6,8 +6,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./realisation-espace.component.less']
 })
 export class RealisationEspaceComponent implements OnInit {
-
-
   constructor() {}
 
   ngOnInit() {}

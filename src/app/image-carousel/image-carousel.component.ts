@@ -6,18 +6,11 @@ import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
   styleUrls: ['./image-carousel.component.less']
 })
 export class ImageCarouselComponent implements OnInit, AfterViewInit {
- 
+  @Input() images: string[];
 
-   @Input() images: string[];
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
-  ngAfterViewInit(): void {
-  }
-
- 
-
+  ngAfterViewInit(): void {}
 }
